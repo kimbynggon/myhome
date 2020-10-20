@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* 메인 콘텐트 */
+#main_content { position: relative; width: 1000px; height: 400px; margin: 0 auto; }
+
+/* 가입 양식 폼 */
+#join_box {	width: 600px;	margin: 0 auto; }
+#join_box h2 { 	border-bottom: solid 1px #dddddd; padding-top: 50px; }
+#join_box .col1 { float: left;	width: 110px; margin-top: 4px; color: red}
+#join_box .col2 { float: left;	width: 400px; }
+#join_box .col3 { float: left; }
+#join_box .form input { width: 390px;	height: 22px; }
+#join_box .form { height: 38px; }
+#join_box .id {	margin-top: 20px; }
+#join_box input[name=email1] { width: 100px; }
+#join_box input[name=email2] { width: 275px; }
+#join_box .bottom_line { margin-top: 10px;	border-bottom: solid 1px #cccccc; }
+#join_box .buttons { text-align: right;	margin: 20px 100px 0 0; }
+
+/*이미지 부모div 레이어*/
+.slideshow {
+    height: 500px;
+    min-width: 1600px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*이미지 부모 자식div 레이어*/
+.slideshow_img {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+}
+
+.slideshow_img a {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/*이미지 이동 버튼 부모div 레이아웃*/
+.slideshow_nav a {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 50%;
+    top: 50%;
+    background: url("../../image/sprites.png") no-repeat;
+    text-indent: -9999em;
+    transform: translateY(-50);
+}
+
+/*이미지 이동 버튼 자식div 레이아웃 (이전이미지버튼)*/
+.slideshow_nav a.prev {
+    background: url("../../image/sprites.png") no-repeat 0px -20px;
+    margin-left: -700px;
+}
+
+/*이미지 이동 버튼 자식div 레이아웃 (다음이미지버튼)*/
+.slideshow_nav a.next {
+    background: url('../../image/sprites.png') no-repeat -80px -20px;
+    margin-left: 680px;
+}
+
+.slideshow_indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:20px;
+    text-align: center;
+}
+
+.slideshow_indicator a {
+    background: url('../../image/sprites.png') no-repeat -113px -4px;
+    width: 9px;
+    height: 8px;
+    text-indent: -9999em;
+    display: inline-block;
+}
+
+.slideshow_indicator a.active {
+    background: url('../../image/sprites.png') no-repeat -133px -4px;
+    text-indent: -9999em;
+    margin: 5px;
+    width: 9px;
+    height: 8px;
+}
+
+
